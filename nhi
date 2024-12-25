@@ -1,2 +1,22 @@
 khi mà new nghĩa là lúc đó mình mới bắt đầu đục lỗ trên RAM
 còn ới tạo ko ko thì chưa có đục lỗ
+
+height của nil = -1
+height của leaf = 0
+
+Height=max(Left Subtree Height,Right Subtree Height)+1. đây là 1 cách để tính height. Cách khác là đếm số edge
+
+Rotate
+khi mà mình điền mấy cái số height nhỏ nhỏ trên tree, đó là max(left height, right height).
+**take skew-left 3-nodes tree as an example
+  nhiều khi tính balance factor  thì mình cần left height và right height. nhưng trên hình tree chỉ ghi max của left/right height. làm mình confuse ko biết tính
+  balace factor như thế nào
+  corresponding height from bottom to top = 0, 1, 2
+  corresponding balace factor from bottom to top = 0, 1 ,2
+  khi mà rotate left thì thằng đc pass (là root của subtree) thì lại ko bị bẻ mà mình bẻ thằng root->left. mà mình còn ko biết parent của original root in the 
+  subtree, vậy làm sao mình rotate đây
+  chắc code là mình thay đổi mối quan hệ hay giá trị trong field của các node
+  vd:  root = (root->left)->right
+
+
+
